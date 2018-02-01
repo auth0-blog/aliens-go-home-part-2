@@ -15,6 +15,13 @@ class App extends Component {
     setInterval(() => {
       self.props.moveObjects(self.canvasMousePosition);
     }, 10);
+
+    window.onresize = () => {
+      const cnv = document.getElementById('aliens-go-home-canvas');
+      cnv.style.width = `${window.innerWidth}px`;
+      cnv.style.height = `${window.innerHeight}px`;
+    };
+    window.onresize();
   }
 
   trackMouse(event) {
