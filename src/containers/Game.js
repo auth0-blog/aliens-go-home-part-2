@@ -13,7 +13,7 @@ const mapDispatchToProps = dispatch => ({
   },
   startGame: () => {
     dispatch(startGame());
-  }
+  },
 });
 
 const Game = connect(
