@@ -6,6 +6,8 @@ const initialGameState = {
   started: false,
   kills: 0,
   lives: 3,
+  flyingObjects: [],
+  lastObjectCreatedAt: new Date(),
 };
 
 const initialState = {
